@@ -1,0 +1,14 @@
+<h1> Bands </h1>
+<ul>
+<% @bands.each do |band| %>
+  <li> <%= link_to band.name, band_url(band) %> </li>
+<% end %>
+</ul>
+
+
+<form action= "/bands" method = "POST">
+  <label> Are we missing one? <br>
+    <input type="text" name="band[name]">
+    <input type="submit" name="Submit">
+  </label>
+</form

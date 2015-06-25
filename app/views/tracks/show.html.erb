@@ -1,0 +1,4 @@
+<h1> <%= @track.name %> </h1>
+<%= button_to('Remove Track', track_url(@track), method: :delete) %>
+<%= link_to "Edit Track", edit_track_url(@track) %>
+<%= link_to "Back to Album", album_url(@track.album) %>
